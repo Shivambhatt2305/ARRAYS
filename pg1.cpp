@@ -1,14 +1,11 @@
 #include<iostream>
 using namespace std;
 int maximum(int size,int arr[]){
-    int max=0;
+    int max=arr[0];
     for(int i=0;i<size;i++){
         if(arr[i]>max){
             max=arr[i];
         }
-	else{
-	max=arr[i+1];
-}
     }
     return max;
 }
